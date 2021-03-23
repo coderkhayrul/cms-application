@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="145a6c88-2f83-48ae-b481-f892e231e4fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/navigation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/sidebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/navigation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +45,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
@@ -66,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616474735414</updated>
       <workItem from="1616474741578" duration="1109000" />
-      <workItem from="1616482950496" duration="3408000" />
+      <workItem from="1616482950496" duration="4849000" />
     </task>
     <servers />
   </component>
@@ -85,6 +84,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="1936" y="361" key="#SQL_Dialects" timestamp="1616493683407">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1936" y="361" key="#SQL_Dialects/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1616493683407" />
     <state x="2061" y="165" key="SettingsEditor" timestamp="1616474782118">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
