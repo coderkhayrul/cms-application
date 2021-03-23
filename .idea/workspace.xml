@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="145a6c88-2f83-48ae-b481-f892e231e4fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/db.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/navigation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +38,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1q8wspIsromk30oUquRiEoD4D4L" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -65,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616474735414</updated>
       <workItem from="1616474741578" duration="1109000" />
-      <workItem from="1616482950496" duration="4849000" />
+      <workItem from="1616482950496" duration="8034000" />
     </task>
     <servers />
   </component>
@@ -83,11 +87,14 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1936" y="361" key="#SQL_Dialects" timestamp="1616493683407">
+    <state x="1936" y="361" key="#SQL_Dialects" timestamp="1616499103681">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state x="1936" y="361" key="#SQL_Dialects/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1616493683407" />
+    <state x="1936" y="361" key="#SQL_Dialects/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1616499103681" />
     <state x="2061" y="165" key="SettingsEditor" timestamp="1616474782118">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
