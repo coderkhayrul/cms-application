@@ -1,7 +1,4 @@
-<?php include "includes/db.php";
-$query = "SELECT * FROM posts";
-$posts_data = mysqli_query($connection,$query);
-?>
+<?php include "includes/db.php"; ?>
 
 <!--Header  Path-->
 <?php include "includes/header.php"; ?>
@@ -20,7 +17,10 @@ $posts_data = mysqli_query($connection,$query);
                 </h1>
 
                 <!-- First Blog Post -->
-                <?php foreach ($posts_data as $post_data){ ?>
+                <?php
+                $query = "SELECT * FROM posts";
+                $posts_data = mysqli_query($connection,$query);
+                foreach ($posts_data as $post_data){ ?>
                 <h2>
                     <a href="#"><?php echo $post_data['post_title']?></a>
                 </h2>

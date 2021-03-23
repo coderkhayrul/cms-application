@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="145a6c88-2f83-48ae-b481-f892e231e4fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/image2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/sidebar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,9 +51,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cms" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\cms\includes" />
     </key>
@@ -68,7 +73,9 @@
       <option name="presentableId" value="Default" />
       <updated>1616474735414</updated>
       <workItem from="1616474741578" duration="1109000" />
-      <workItem from="1616482950496" duration="9011000" />
+      <workItem from="1616482950496" duration="14844000" />
+      <workItem from="1616515876817" duration="595000" />
+      <workItem from="1616517605117" duration="3237000" />
     </task>
     <servers />
   </component>
@@ -85,18 +92,23 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1936" y="361" key="#SQL_Dialects" timestamp="1616499103681">
+    <state x="1936" y="361" key="#SQL_Dialects" timestamp="1616509098902">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state x="1936" y="361" key="#SQL_Dialects/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1616499103681" />
+    <state x="1936" y="361" key="#SQL_Dialects/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1616509098902" />
     <state x="2061" y="165" key="SettingsEditor" timestamp="1616474782118">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="2061" y="165" key="SettingsEditor/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1616474782118" />
+    <state x="2216" y="240" key="run.anything.popup" timestamp="1616519168652">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2216" y="240" key="run.anything.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1616519168652" />
   </component>
 </project>
