@@ -20,14 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="145a6c88-2f83-48ae-b481-f892e231e4fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/phpcode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/warning-labe.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/add_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/add_post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/edit_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/edit_post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/fff.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/warning-labe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/view_all_posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/view_all_posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Guthia_mosqueBarisal.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +86,8 @@
       <workItem from="1617125253220" duration="111000" />
       <workItem from="1617158301876" duration="266000" />
       <workItem from="1617158696671" duration="6850000" />
-      <workItem from="1617209810558" duration="3779000" />
+      <workItem from="1617209810558" duration="3845000" />
+      <workItem from="1617218488923" duration="5962000" />
     </task>
     <servers />
   </component>
@@ -124,10 +122,22 @@
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="1692" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617100286304" />
+    <state x="2340" y="275" key="FileChooserDialogImpl" timestamp="1617224988363">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2340" y="275" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617224988363" />
     <state x="2061" y="165" key="SettingsEditor" timestamp="1616474782118">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="2061" y="165" key="SettingsEditor/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1616474782118" />
+    <state x="2369" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617221096581">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2369" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617221096581" />
+    <state x="2267" y="122" width="585" height="795" key="find.popup" timestamp="1617219779191">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2267" y="122" width="585" height="795" key="find.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617219779191" />
     <state x="2216" y="240" key="run.anything.popup" timestamp="1617213056952">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
