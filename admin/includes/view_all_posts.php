@@ -36,11 +36,7 @@
                     <?php
                     if (isset($_GET['delete'])) {
                         $delete_post_id = $_GET['delete'];
-                        $delete_image = '../images/' . $post['post_image'];
-                        if (file_exists($delete_image)) {
-                            unlink($delete_image);
-                        }
-                        $query = mysqli_query($connection, "DELETE FROM posts WHERE post_id = $delete_post_id ");
+                        $query = mysqli_query($connection, "DELETE FROM posts WHERE post_id = $delete_post_id");
                         header("Location: posts.php");
                     }
                     ?>
