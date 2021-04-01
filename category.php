@@ -34,7 +34,7 @@
                 <hr>
                 <img class="img-responsive" src="images/<?php echo $post_data['post_image']?>" alt="course image show">
                 <hr>
-                <p><?php echo $post_data['post_content']?></p>
+                <p><?php echo substr($post_data['post_content'], 0,100)?></p>
                 <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
                 <hr>
