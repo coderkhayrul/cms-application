@@ -24,7 +24,15 @@
                 <td class="text-center"><img width="75px" src="../images/<?php echo $post['post_image']; ?>" alt=""></td>
                 <td><?php echo $post['post_author']; ?></td>
                 <td><?php echo $post['post_title']; ?></td>
-                <td><?php echo $post['post_category_id']; ?></td>
+
+                <?php
+                $post_categories_id = $post['post_category_id'];
+                $query = "SELECT * FROM categories WHERE cat_id = $post_categories_id";
+                $select_categories_id = mysqli_query($connection, $query);
+                foreach ($select_categories_id as $post_category_id){
+                ?>
+                <td><?php echo $post_category_id['cat_title']; ?></td>
+                <?php } ?>
                 <td><?php echo $post['post_tags']; ?></td>
                 <td class="text-center" width="5%"><?php echo $post['post_status']; ?></td>
                 <td width="5%"><?php echo $post['post_comment_count']; ?></td>
