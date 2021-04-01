@@ -43,7 +43,7 @@
                             </p>
                             <p><span class="glyphicon glyphicon-time"></span> Posted on <?php echo $post_data['post_date']?></p>
                             <hr>
-                            <img class="img-responsive" src="<?php echo $post_data['post_image']?>" alt="course image show">
+                            <img class="img-responsive" src="images/<?php echo $post_data['post_image']?>" alt="course image show">
                             <hr>
                             <p><?php echo $post_data['post_content']?></p>
                             <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
