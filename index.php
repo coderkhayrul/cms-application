@@ -1,3 +1,4 @@
+
 <?php include "includes/db.php"; ?>
 
 <!--Header  Path-->
@@ -5,7 +6,6 @@
 
 <!-- Navigation -->
 <?php include "includes/navigation.php"; ?>
-
     <!-- Page Content -->
     <div class="container">
         <div class="row">
@@ -22,7 +22,7 @@
                 $posts_data = mysqli_query($connection,$query);
                 foreach ($posts_data as $post_data){ ?>
                 <h2>
-                    <a href="#"><?php echo $post_data['post_title']?></a>
+                    <a href="post.php?p_id=<?php echo $post_data['post_id'] ?>"><?php echo $post_data['post_title']?></a>
                 </h2>
                 <p class="lead">
                     by <a href="index.php"><?php echo $post_data['post_author']?></a>
