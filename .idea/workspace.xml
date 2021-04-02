@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="145a6c88-2f83-48ae-b481-f892e231e4fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/comments.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/view_all_comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/view_all_comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -90,7 +92,8 @@
       <workItem from="1617226353770" duration="4594000" />
       <workItem from="1617258206862" duration="35139000" />
       <workItem from="1617357159502" duration="134000" />
-      <workItem from="1617368312275" duration="3242000" />
+      <workItem from="1617368312275" duration="3826000" />
+      <workItem from="1617376005052" duration="4284000" />
     </task>
     <servers />
   </component>
@@ -129,10 +132,10 @@
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="2340" y="275" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617224988363" />
-    <state x="2061" y="165" key="SettingsEditor" timestamp="1616474782118">
+    <state x="2419" y="132" key="SettingsEditor" timestamp="1617376081809">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="165" key="SettingsEditor/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1616474782118" />
+    <state x="2419" y="132" key="SettingsEditor/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617376081809" />
     <state x="2369" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617221096581">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
@@ -141,13 +144,17 @@
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="2267" y="122" width="585" height="795" key="find.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617219779191" />
-    <state x="2216" y="240" width="672" height="677" key="run.anything.popup" timestamp="1617368741615">
+    <state x="2689" y="361" width="611" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1617376055008">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state x="2216" y="240" width="672" height="677" key="run.anything.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617368741615" />
-    <state x="2223" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1617296632730">
+    <state x="2689" y="361" width="611" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617376055008" />
+    <state x="2216" y="240" width="672" height="677" key="run.anything.popup" timestamp="1617376818202">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state x="2223" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617296632730" />
+    <state x="2216" y="240" width="672" height="677" key="run.anything.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617376818202" />
+    <state x="2223" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1617376822639">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2223" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617376822639" />
   </component>
 </project>
