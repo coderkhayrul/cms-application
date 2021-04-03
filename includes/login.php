@@ -1,0 +1,1 @@
+<?php include "db.php";if (isset($_POST['login'])){    echo $username = $_POST['username'];    echo $user_password = $_POST['user_password'];}
