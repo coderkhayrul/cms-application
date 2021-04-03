@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="145a6c88-2f83-48ae-b481-f892e231e4fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/users_image/fff.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/add_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/add_user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/view_all_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/view_all_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/my_photo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/users_image/my_photo.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +62,7 @@
       <recent name="C:\xampp\htdocs\cms" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cms\users_image" />
       <recent name="C:\xampp\htdocs\cms\admin" />
       <recent name="C:\xampp\htdocs\cms\includes" />
     </key>
@@ -93,7 +97,7 @@
       <workItem from="1617357159502" duration="134000" />
       <workItem from="1617368312275" duration="3826000" />
       <workItem from="1617376005052" duration="7040000" />
-      <workItem from="1617412488348" duration="10475000" />
+      <workItem from="1617412488348" duration="12999000" />
     </task>
     <servers />
   </component>
