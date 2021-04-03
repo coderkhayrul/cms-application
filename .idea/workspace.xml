@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="145a6c88-2f83-48ae-b481-f892e231e4fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/avatardefault.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/add_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/add_post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +93,7 @@
       <workItem from="1617357159502" duration="134000" />
       <workItem from="1617368312275" duration="3826000" />
       <workItem from="1617376005052" duration="7040000" />
-      <workItem from="1617412488348" duration="1612000" />
+      <workItem from="1617412488348" duration="2739000" />
     </task>
     <servers />
   </component>
@@ -148,10 +148,10 @@
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="2689" y="361" width="611" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617376055008" />
-    <state x="2216" y="240" width="672" height="677" key="run.anything.popup" timestamp="1617376818202">
+    <state x="2216" y="240" width="672" height="677" key="run.anything.popup" timestamp="1617414979845">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state x="2216" y="240" width="672" height="677" key="run.anything.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617376818202" />
+    <state x="2216" y="240" width="672" height="677" key="run.anything.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617414979845" />
     <state x="2223" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1617376822639">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
