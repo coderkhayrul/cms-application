@@ -18,24 +18,30 @@
 
                 <!-- First Blog Post -->
                 <?php
-                $query = "SELECT * FROM posts";
+                $query = "SELECT * FROM posts WHERE post_status = 'published'";
                 $posts_data = mysqli_query($connection,$query);
-                foreach ($posts_data as $post_data){ ?>
-                <h2>
-                    <a href="post.php?p_id=<?php echo $post_data['post_id'] ?>"><?php echo $post_data['post_title']?></a>
-                </h2>
-                <p class="lead">
-                    by <a href="index.php"><?php echo $post_data['post_author']?></a>
-                </p>
-                <p><span class="glyphicon glyphicon-time"></span> Posted on <?php echo $post_data['post_date']?></p>
-                <hr>
-                <img class="img-responsive" src="images/<?php echo $post_data['post_image']?>" alt="course image show">
-                <hr>
-                <p><?php echo substr($post_data['post_content'], 0,100) ?></p>
-                <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    foreach ($posts_data as $post_data){
+                    if ($post_data['post_status'] !== 'published'){
+                        echo "POST NOT FOUND!!";
+                    }else{
+                        ?>
+                        <h2>
+                            <a href="post.php?p_id=<?php echo $post_data['post_id'] ?>"><?php echo $post_data['post_title']?></a>
+                        </h2>
+                        <p class="lead">
+                            by <a href="index.php"><?php echo $post_data['post_author']?></a>
+                        </p>
+                        <p><span class="glyphicon glyphicon-time"></span> Posted on <?php echo $post_data['post_date']?></p>
+                        <hr>
+                        <img class="img-responsive" src="images/<?php echo $post_data['post_image']?>" alt="course image show">
+                        <hr>
+                        <p><?php echo substr($post_data['post_content'], 0,100) ?></p>
+                        <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-                <hr>
-                <?php } ?>
+                        <hr>
+
+                <?php }
+                } ?>
                 <!-- First Blog Post End -->
 
             </div>

@@ -20,9 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="145a6c88-2f83-48ae-b481-f892e231e4fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/includes/add_user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/includes/edit_user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/includes/view_all_user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/image_2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/add_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/add_post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/admin_sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/admin_sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,14 +55,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/includes" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\cms" />
+      <recent name="C:\xampp\htdocs\cms\admin\includes" />
       <recent name="C:\xampp\htdocs\cms\admin" />
+      <recent name="C:\xampp\htdocs\cms" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\cms\admin" />
@@ -93,7 +100,7 @@
       <workItem from="1617357159502" duration="134000" />
       <workItem from="1617368312275" duration="3826000" />
       <workItem from="1617376005052" duration="7040000" />
-      <workItem from="1617412488348" duration="2739000" />
+      <workItem from="1617412488348" duration="9287000" />
     </task>
     <servers />
   </component>
