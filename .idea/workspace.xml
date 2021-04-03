@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="145a6c88-2f83-48ae-b481-f892e231e4fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/avatardefault.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/view_all_comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/view_all_comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +54,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\cms\admin" />
-      <recent name="C:\xampp\htdocs\cms\includes" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\cms" />
       <recent name="C:\xampp\htdocs\cms\admin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cms\admin" />
+      <recent name="C:\xampp\htdocs\cms\includes" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -91,7 +92,8 @@
       <workItem from="1617258206862" duration="35139000" />
       <workItem from="1617357159502" duration="134000" />
       <workItem from="1617368312275" duration="3826000" />
-      <workItem from="1617376005052" duration="6562000" />
+      <workItem from="1617376005052" duration="7040000" />
+      <workItem from="1617412488348" duration="1612000" />
     </task>
     <servers />
   </component>
@@ -130,10 +132,10 @@
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="2340" y="275" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617224988363" />
-    <state x="2419" y="132" key="SettingsEditor" timestamp="1617376081809">
+    <state x="2419" y="132" key="SettingsEditor" timestamp="1617412691307">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state x="2419" y="132" key="SettingsEditor/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617376081809" />
+    <state x="2419" y="132" key="SettingsEditor/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617412691307" />
     <state x="2369" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617221096581">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
