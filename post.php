@@ -51,20 +51,23 @@
             <!-- Comments Form -->
             <?php
             if (isset($_POST['create_comment'])){
+                if (!empty($_POST['create_comment'])){
+                    $comment_post_id =$_GET['p_id'];
+                    $comment_author = $_POST['comment_author'];
+                    $comment_email = $_POST['comment_email'];
+                    $comment_content = $_POST['comment_content'];
 
-                $comment_post_id =$_GET['p_id'];
-                $comment_author = $_POST['comment_author'];
-                $comment_email = $_POST['comment_email'];
-                $comment_content = $_POST['comment_content'];
-
-                $query = "INSERT INTO comments (comment_post_id, comment_author, comment_email, comment_content, comment_status, comment_date)";
-                $query .= "VALUES($comment_post_id, '{$comment_author}', '{$comment_email}', '{$comment_content}', 'Unapproved', now())";
-                $create_comment_query = mysqli_query($connection, $query);
-                if (!$create_comment_query){
-                    die("QUERY FAILED".mysqli_error($connection));
+                    $query = "INSERT INTO comments (comment_post_id, comment_author, comment_email, comment_content, comment_status, comment_date)";
+                    $query .= "VALUES($comment_post_id, '{$comment_author}', '{$comment_email}', '{$comment_content}', 'Unapproved', now())";
+                    $create_comment_query = mysqli_query($connection, $query);
+                    if (!$create_comment_query){
+                        die("QUERY FAILED".mysqli_error($connection));
+                    }
+                    $query = "UPDATE posts SET post_comment_count = post_comment_count + 1 WHERE post_id = $comment_post_id";
+                    $update_comment_count = mysqli_query($connection, $query);
+                }else{
+                    $false_comment = "<p class='text-danger'>This Filed Not Empty.</p>";
                 }
-                $query = "UPDATE posts SET post_comment_count = post_comment_count + 1 WHERE post_id = $comment_post_id";
-                $update_comment_count = mysqli_query($connection, $query);
             }
             ?>
             <div class="well">
@@ -82,6 +85,11 @@
                         <label for="comment">Your Comment</label>
                         <textarea class="form-control" rows="3" name="comment_content" placeholder="Enter Message"></textarea>
                     </div>
+                    <?php
+                    if (isset($false_comment )){
+                        echo $false_comment ;
+                    }
+                    ?>
                     <button type="submit" name="create_comment" class="btn btn-primary">Submit</button>
                 </form>
             </div>
