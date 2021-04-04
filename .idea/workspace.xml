@@ -20,10 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="145a6c88-2f83-48ae-b481-f892e231e4fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/profile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users_image/167028406_5302143346526134_3746661998641505887_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users_image/Guthia_mosqueBarisal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users_image/bb8da289b17be95783f090f3da566f41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users_image/cover.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/admin_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/admin_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/admin_navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/admin_navigation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/admin_sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/admin_sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/edit_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/edit_user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users_image/bb8da289b17be95783f090f3da566f41.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,15 +61,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\cms\admin\includes" />
-      <recent name="C:\xampp\htdocs\cms\admin" />
-      <recent name="C:\xampp\htdocs\cms" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\cms\users_image" />
       <recent name="C:\xampp\htdocs\cms\admin" />
       <recent name="C:\xampp\htdocs\cms\includes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cms\admin\includes" />
+      <recent name="C:\xampp\htdocs\cms\admin" />
+      <recent name="C:\xampp\htdocs\cms" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -97,7 +103,7 @@
       <workItem from="1617368312275" duration="3826000" />
       <workItem from="1617376005052" duration="7040000" />
       <workItem from="1617412488348" duration="34272000" />
-      <workItem from="1617499460984" duration="1299000" />
+      <workItem from="1617499460984" duration="5505000" />
     </task>
     <servers />
   </component>
