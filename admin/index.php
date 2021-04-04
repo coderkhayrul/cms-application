@@ -149,15 +149,20 @@ include "includes/admin_header.php"; ?>
                         var data = google.visualization.arrayToDataTable([
                             ['Data', 'Count'],
                             <?php
+                            $element_text = ['Posts', 'Categories', 'Users', 'Comments'];
+                            $element_count = [$user_count, $category_count, $user_count, $comment_count];
+
+                            for($i = 0; $i < 4; $i++){
+                                echo "['{$element_text[$i]}'" . "," . "{$element_count[$i]}],";
+                            }
 
                             ?>
-                            ['Post', 1000],
-
+                            // ['Post', 1000,],
                         ]);
 
                         var options = {
                             chart: {
-                                title: '',
+                                title: 'Information View',
                                 subtitle: '',
                             }
                         };
