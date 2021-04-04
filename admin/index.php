@@ -141,6 +141,23 @@ include "includes/admin_header.php"; ?>
             <!-- WIDGET-->
             <!-- GOOGLE CHART -->
             <div class="row">
+                <?php
+                // DRAFT POST
+                $query = "SELECT * FROM posts WHERE post_status = 'draft'";
+                $select_all_draft_post = mysqli_query($connection,$query);
+                $draft_post_count = mysqli_num_rows($select_all_draft_post);
+
+                // APPROVED COMMENT
+                $query = "SELECT * FROM comments WHERE comment_status = 'unapproved'";
+                $select_all_unapproved_status = mysqli_query($connection,$query);
+                $unapproved_comment_count = mysqli_num_rows($select_all_unapproved_status);
+
+                // SUBSCRIBER USER
+                $query = "SELECT * FROM users WHERE user_role = 'subscriber'";
+                $select_all_subscriber_user = mysqli_query($connection,$query);
+                $subscriber_user_count = mysqli_num_rows($select_all_subscriber_user);
+                ?>
+
                 <script type="text/javascript">
                     google.charts.load('current', {'packages':['bar']});
                     google.charts.setOnLoadCallback(drawChart);
@@ -149,10 +166,10 @@ include "includes/admin_header.php"; ?>
                         var data = google.visualization.arrayToDataTable([
                             ['Data', 'Count'],
                             <?php
-                            $element_text = ['Active Posts', 'Comments', 'Users', 'Categories'];
-                            $element_count = [$post_count, $comment_count, $user_count, $category_count ];
+                            $element_text = ['Active Posts','Draft Posts', 'Comments', 'Pending Comments', 'Users', 'Subscriber', 'Categories'];
+                            $element_count = [$post_count,$draft_post_count, $comment_count, $unapproved_comment_count, $user_count, $subscriber_user_count, $category_count ];
 
-                            for($i = 0; $i < 4; $i++){
+                            for($i = 0; $i < 7; $i++){
                                 echo "['{$element_text[$i]}'" . "," . "{$element_count[$i]}],";
                             }
 
@@ -162,8 +179,8 @@ include "includes/admin_header.php"; ?>
 
                         var options = {
                             chart: {
-                                title: 'Information View',
-                                subtitle: '',
+                                title: 'CMS',
+                                subtitle: 'Application Performance',
                             }
                         };
                         var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
