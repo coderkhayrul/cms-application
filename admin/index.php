@@ -149,8 +149,8 @@ include "includes/admin_header.php"; ?>
                         var data = google.visualization.arrayToDataTable([
                             ['Data', 'Count'],
                             <?php
-                            $element_text = ['Posts', 'Categories', 'Users', 'Comments'];
-                            $element_count = [$user_count, $category_count, $user_count, $comment_count];
+                            $element_text = ['Active Posts', 'Comments', 'Users', 'Categories'];
+                            $element_count = [$post_count, $comment_count, $user_count, $category_count ];
 
                             for($i = 0; $i < 4; $i++){
                                 echo "['{$element_text[$i]}'" . "," . "{$element_count[$i]}],";
