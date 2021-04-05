@@ -81,7 +81,8 @@ if (isset($_POST['checkBoxArray'])){
                 <td width="5%"><?php echo $post['post_comment_count']; ?></td>
                 <td><?php echo $post['post_date']; ?></td>
                 <td class=" text-center" width="15%">
-                    <a class="btn btn-success btn-sm" href="">View</a>
+                    <!--VIEW POST -->
+                    <a class="btn btn-success btn-sm" href="../post.php?p_id=<?php echo $post['post_id']; ?>">View</a>
                     <a class="btn btn-primary btn-sm" href="posts.php?source=edit_post&p_id=<?php echo $post['post_id']; ?>">Edit</a>
                     <!-- POST DELETE -->
                     <?php
