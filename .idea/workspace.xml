@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="145a6c88-2f83-48ae-b481-f892e231e4fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,20 +48,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cms" />
+      <recent name="C:\xampp\htdocs\cms\admin" />
+      <recent name="C:\xampp\htdocs\cms\admin\includes" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\cms\users_image" />
       <recent name="C:\xampp\htdocs\cms\admin" />
       <recent name="C:\xampp\htdocs\cms\includes" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\cms\admin" />
-      <recent name="C:\xampp\htdocs\cms\admin\includes" />
-      <recent name="C:\xampp\htdocs\cms" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -97,7 +97,7 @@
       <workItem from="1617412488348" duration="34272000" />
       <workItem from="1617499460984" duration="31503000" />
       <workItem from="1617619445330" duration="3679000" />
-      <workItem from="1617625937267" duration="7187000" />
+      <workItem from="1617625937267" duration="7691000" />
     </task>
     <servers />
   </component>
