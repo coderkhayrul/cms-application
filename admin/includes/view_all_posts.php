@@ -43,7 +43,7 @@ if (isset($_POST['checkBoxArray'])){
 
         <thead>
         <tr class="bg-primary">
-            <th scope="col" ><input class="checkbox" id="select_AllBox" type="checkbox"></th>
+            <th scope="col" ><input onclick="toggle(this);" type="checkbox"></th>
             <th scope="col">Id</th>
             <th scope="col">Image</th>
             <th scope="col">Author</th>
@@ -62,7 +62,7 @@ if (isset($_POST['checkBoxArray'])){
         $select_posts = mysqli_query($connection, $query);
         foreach ($select_posts as $post) { ?>
             <tr>
-                <th scope="col"><input name="checkBoxArray[]" type="checkbox" class="checkbox" value="<?php echo $post['post_id']; ?>"></th>
+                <th scope="col"><input name="checkBoxArray[]" type="checkbox" class="checkBoxes" value="<?php echo $post['post_id']; ?>"></th>
                 <th scope="col"><?php echo $post['post_id']; ?></th>
                 <td class="text-center"><img width="75px" src="../images/<?php echo $post['post_image']; ?>" alt=""></td>
                 <td><?php echo $post['post_author']; ?></td>
@@ -98,3 +98,15 @@ if (isset($_POST['checkBoxArray'])){
         </tbody>
     </table>
 </form>
+
+<!--CheckBox Select Script-->
+<script type="text/javascript">
+
+    function toggle(source) {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i] !== source)
+                checkboxes[i].checked = source.checked;
+        }
+    }
+</script>
