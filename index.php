@@ -31,10 +31,12 @@
                         </p>
                         <p><span class="glyphicon glyphicon-time"></span> Posted on <?php echo $post_data['post_date']?></p>
                         <hr>
-                        <img class="img-responsive" src="images/<?php echo $post_data['post_image']?>" alt="course image show">
+                        <a href="post.php?p_id=<?php echo $post_data['post_id'] ?>">
+                            <img class="img-responsive" src="images/<?php echo $post_data['post_image']?>" alt="course image show">
+                        </a>
                         <hr>
                         <p><?php echo substr($post_data['post_content'], 0,100) ?></p>
-                        <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                        <a class="btn btn-primary" href="post.php?p_id=<?php echo $post_data['post_id'] ?>">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
                         <hr>
 
