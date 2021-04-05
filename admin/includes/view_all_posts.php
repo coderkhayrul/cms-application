@@ -1,5 +1,20 @@
-<table class="table table-bordered table-hover">
-    <thead>
+
+<form action="" method="post">
+    <table class="table table-bordered table-hover">
+        <div class="col-xs-4" id="bulkOptionContainer">
+            <select name="" id="" class="form-control">
+                <option value="">Select Option</option>
+                <option value="">Published</option>
+                <option value="">Draft</option>
+                <option value="">Delete</option>
+            </select>
+        </div>
+        <div class="col-xs-4">
+            <button type="submit" name="submit" class="btn btn-success">Apply</button>
+            <a href="posts.php?source=add_post" class="btn btn-primary">Add New</a>
+        </div>
+
+        <thead>
         <tr class="bg-primary">
             <th scope="col">Id</th>
             <th scope="col">Image</th>
@@ -12,13 +27,13 @@
             <th scope="col">Date</th>
             <th scope="col">Action</th>
         </tr>
-    </thead>
-    <tbody>
+        </thead>
+        <tbody>
         <?php
         $query = "SELECT * FROM posts";
         $select_posts = mysqli_query($connection, $query);
         foreach ($select_posts as $post) {
-        ?>
+            ?>
             <tr>
                 <th scope="col"><?php echo $post['post_id']; ?></th>
                 <td class="text-center"><img width="75px" src="../images/<?php echo $post['post_image']; ?>" alt=""></td>
@@ -30,8 +45,8 @@
                 $query = "SELECT * FROM categories WHERE cat_id = $post_categories_id";
                 $select_categories_id = mysqli_query($connection, $query);
                 foreach ($select_categories_id as $post_category_id){
-                ?>
-                <td><?php echo $post_category_id['cat_title']; ?></td>
+                    ?>
+                    <td><?php echo $post_category_id['cat_title']; ?></td>
                 <?php } ?>
                 <td><?php echo $post['post_tags']; ?></td>
                 <td class="text-center" width="5%"><?php echo $post['post_status']; ?></td>
@@ -52,5 +67,6 @@
                 </td>
             </tr>
         <?php } ?>
-    </tbody>
-</table>
+        </tbody>
+    </table>
+</form>
