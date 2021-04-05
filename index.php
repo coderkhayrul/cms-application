@@ -37,22 +37,15 @@
                         <hr>
                         <p><?php echo substr($post_data['post_content'], 0,100) ?></p>
                         <a class="btn btn-primary" href="post.php?p_id=<?php echo $post_data['post_id'] ?>">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
                         <hr>
-
                 <?php }
                 } ?>
                 <!-- First Blog Post End -->
-
             </div>
-
             <!-- Blog Sidebar Widgets Column -->
             <?php include "includes/sidebar.php"; ?>
-
-
         </div>
         <!-- /.row -->
         <hr>
-
 <!--Footer-->
 <?php include "includes/footer.php"; ?>
