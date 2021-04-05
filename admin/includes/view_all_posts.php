@@ -1,12 +1,39 @@
 
+
+<?php
+if (isset($_POST['checkBoxArray'])){
+    foreach ($_POST['checkBoxArray'] as $post_value_Id){
+        $bulk_option = $_POST['bulk_option'];
+        switch ($bulk_option){
+
+            case 'published':
+                $query = "UPDATE posts SET post_status = '{$bulk_option}' WHERE post_id = {$post_value_Id}";
+                $update_to_published_status = mysqli_query($connection,$query);
+                confirmQuery($update_to_published_status);
+                break;
+            case 'draft':
+                $query = "UPDATE posts SET post_status = '{$bulk_option}' WHERE post_id = {$post_value_Id}";
+                $update_to_draft_status = mysqli_query($connection,$query);
+                confirmQuery($update_to_draft_status);
+                break;
+            case 'delete':
+                $query = "DELETE FROM posts WHERE post_id = {$post_value_Id}";
+                $update_to_delete_status = mysqli_query($connection,$query);
+                confirmQuery($update_to_delete_status);
+                break;
+        }
+    }
+}
+?>
 <form action="" method="post">
     <table class="table table-bordered table-hover">
-        <div class="col-xs-4" id="bulkOptionContainer">
-            <select name="" id="" class="form-control">
+
+        <div style="padding:0px" class="col-xs-4" id="bulkOptionContainer">
+            <select name="bulk_option" class="form-control">
                 <option value="">Select Option</option>
-                <option value="">Published</option>
-                <option value="">Draft</option>
-                <option value="">Delete</option>
+                <option value="published">Published</option>
+                <option value="draft">Draft</option>
+                <option value="delete">Delete</option>
             </select>
         </div>
         <div class="col-xs-4">
@@ -16,6 +43,7 @@
 
         <thead>
         <tr class="bg-primary">
+            <th scope="col" ><input class="checkbox" id="select_AllBox" type="checkbox"></th>
             <th scope="col">Id</th>
             <th scope="col">Image</th>
             <th scope="col">Author</th>
@@ -32,9 +60,9 @@
         <?php
         $query = "SELECT * FROM posts";
         $select_posts = mysqli_query($connection, $query);
-        foreach ($select_posts as $post) {
-            ?>
+        foreach ($select_posts as $post) { ?>
             <tr>
+                <th scope="col"><input name="checkBoxArray[]" type="checkbox" class="checkbox" value="<?php echo $post['post_id']; ?>"></th>
                 <th scope="col"><?php echo $post['post_id']; ?></th>
                 <td class="text-center"><img width="75px" src="../images/<?php echo $post['post_image']; ?>" alt=""></td>
                 <td><?php echo $post['post_author']; ?></td>
