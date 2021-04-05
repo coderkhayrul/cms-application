@@ -30,10 +30,16 @@
                             die("QUERY FAILED". mysqli_error($connection));
                         }
                         foreach ($select_randsalt_query as $randSalt_data ){
-                            echo $randSalt_data['randSalt'];
+                            $salt = $randSalt_data['randSalt'];
                         }
-                    }
+                        $query = "INSERT INTO users (username, user_email, user_password, user_role)";
+                        $query .= "VALUES('{$username}','{$user_email}', '{$user_password}', 'subscriber')";
+                        $register_user_query = mysqli_query($connection, $query);
+                        if (!$register_user_query){
+                            die("QUERY FAILED" . mysqli_error($connection). ' ' . mysqli_error($connection));
+                        }
 
+                    }
                     ?>
                     <form role="form" action="registration.php" method="post" id="login-form" autocomplete="off">
                         <div class="form-group">
