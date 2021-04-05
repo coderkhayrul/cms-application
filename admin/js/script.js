@@ -1,0 +1,1 @@
+$(document).ready(function(){    // EDITOR CK-EDITOR.    ClassicEditor        .create( document.querySelector( '#editor' ) )        .catch( error => {            console.error( error );        } );});
