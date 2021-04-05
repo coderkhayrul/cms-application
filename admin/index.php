@@ -142,6 +142,11 @@ include "includes/admin_header.php"; ?>
             <!-- GOOGLE CHART -->
             <div class="row">
                 <?php
+                // PUBLISHED POST
+                $query = "SELECT * FROM posts WHERE post_status = 'published'";
+                $select_all_published_post = mysqli_query($connection,$query);
+                $published_post_count = mysqli_num_rows($select_all_published_post);
+
                 // DRAFT POST
                 $query = "SELECT * FROM posts WHERE post_status = 'draft'";
                 $select_all_draft_post = mysqli_query($connection,$query);
@@ -166,10 +171,10 @@ include "includes/admin_header.php"; ?>
                         var data = google.visualization.arrayToDataTable([
                             ['Data', 'Count'],
                             <?php
-                            $element_text = ['Active Posts','Draft Posts', 'Comments', 'Pending Comments', 'Users', 'Subscriber', 'Categories'];
-                            $element_count = [$post_count,$draft_post_count, $comment_count, $unapproved_comment_count, $user_count, $subscriber_user_count, $category_count ];
+                            $element_text = ['All Posts', 'Active Posts', 'Draft Posts', 'Comments', 'Pending Comments', 'Users', 'Subscriber', 'Categories'];
+                            $element_count = [$post_count, $published_post_count, $draft_post_count, $comment_count, $unapproved_comment_count, $user_count, $subscriber_user_count, $category_count ];
 
-                            for($i = 0; $i < 7; $i++){
+                            for($i = 0; $i < 8; $i++){
                                 echo "['{$element_text[$i]}'" . "," . "{$element_count[$i]}],";
                             }
 
