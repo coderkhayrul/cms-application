@@ -29,6 +29,9 @@
                         if (!$select_randsalt_query){
                             die("QUERY FAILED". mysqli_error($connection));
                         }
+                        foreach ($select_randsalt_query as $randSalt_data ){
+                            echo $randSalt_data['randSalt'];
+                        }
                     }
 
                     ?>
