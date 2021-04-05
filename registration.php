@@ -24,15 +24,8 @@
                         $user_email     = mysqli_real_escape_string($connection, $user_email);
 
                         if (!empty($username) && !empty($user_password) && !empty($user_email)){
-                            $query = "SELECT randSalt FROM users";
-                            $select_randsalt_query = mysqli_query($connection, $query);
-
-                            if (!$select_randsalt_query){
-                                die("QUERY FAILED". mysqli_error($connection));
-                            }
-                            foreach ($select_randsalt_query as $randSalt_data ){
-                                $salt = $randSalt_data['randSalt'];
-                            }
+                            $salt = "@@25shanto00@@";
+                            $user_password = crypt($user_password, $salt);
                             $query = "INSERT INTO users (username, user_email, user_password, user_role)";
                             $query .= "VALUES('{$username}','{$user_email}', '{$user_password}', 'subscriber')";
                             $register_user_query = mysqli_query($connection, $query);
