@@ -21,9 +21,7 @@
                 $query = "SELECT * FROM posts WHERE post_status = 'published'";
                 $posts_data = mysqli_query($connection,$query);
                     foreach ($posts_data as $post_data){
-                    if ($post_data['post_status'] !== 'published'){
-                        echo "POST NOT FOUND!!";
-                    }else{
+                    if ($post_data['post_status'] === 'published'){
                         ?>
                         <h2>
                             <a href="post.php?p_id=<?php echo $post_data['post_id'] ?>"><?php echo $post_data['post_title']?></a>
