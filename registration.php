@@ -24,8 +24,9 @@
                         $user_email     = mysqli_real_escape_string($connection, $user_email);
 
                         if (!empty($username) && !empty($user_password) && !empty($user_email)){
-                            $salt = "@@25shanto00@@";
-                            $user_password = crypt($user_password, $salt);
+                            $hash = "iflkdfghbnytdcfrtyhj22";
+
+                            $user_password = crypt($user_password, $hash);
                             $query = "INSERT INTO users (username, user_email, user_password, user_role)";
                             $query .= "VALUES('{$username}','{$user_email}', '{$user_password}', 'subscriber')";
                             $register_user_query = mysqli_query($connection, $query);
