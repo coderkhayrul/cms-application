@@ -21,8 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="145a6c88-2f83-48ae-b481-f892e231e4fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/add_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/add_user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/edit_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/edit_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,15 +57,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\cms" />
-      <recent name="C:\xampp\htdocs\cms\admin" />
-      <recent name="C:\xampp\htdocs\cms\admin\includes" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\cms\users_image" />
       <recent name="C:\xampp\htdocs\cms\admin" />
       <recent name="C:\xampp\htdocs\cms\includes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cms" />
+      <recent name="C:\xampp\htdocs\cms\admin" />
+      <recent name="C:\xampp\htdocs\cms\admin\includes" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -99,7 +102,7 @@
       <workItem from="1617499460984" duration="31503000" />
       <workItem from="1617619445330" duration="3679000" />
       <workItem from="1617625937267" duration="16313000" />
-      <workItem from="1617671203077" duration="1659000" />
+      <workItem from="1617671203077" duration="10162000" />
     </task>
     <servers />
   </component>
@@ -122,14 +125,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1936" y="361" key="#SQL_Dialects" timestamp="1616509098902">
+    <state x="1936" y="361" key="#SQL_Dialects" timestamp="1617695568802">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state x="1936" y="361" key="#SQL_Dialects/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1616509098902" />
-    <state x="2290" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616604852886">
+    <state x="1936" y="361" key="#SQL_Dialects/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617695568802" />
+    <state x="2290" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617695728525">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state x="2290" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1616604852886" />
+    <state x="2290" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617695728525" />
     <state x="1692" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1617100286304">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
