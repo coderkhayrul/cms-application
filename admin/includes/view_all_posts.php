@@ -80,6 +80,7 @@ if (isset($_POST['checkBoxArray'])){
             <th scope="col">Status</th>
             <th scope="col">Comment</th>
             <th scope="col">Date</th>
+            <th scope="col">Views</th>
             <th scope="col">Action</th>
         </tr>
         </thead>
@@ -104,10 +105,11 @@ if (isset($_POST['checkBoxArray'])){
                     ?>
                     <td><?php echo $post_category_id['cat_title']; ?></td>
                 <?php } ?>
-                <td><?php echo $post['post_tags']; ?></td>
+                <td class=" text-center"><?php echo $post['post_tags']; ?></td>
                 <td class="text-center" width="5%"><?php echo $post['post_status']; ?></td>
                 <td width="5%"><?php echo $post['post_comment_count']; ?></td>
                 <td><?php echo $post['post_date']; ?></td>
+                <td class=" text-center text-primary"><?php echo $post['post_views_count']; ?></td>
 
                 <!-- VIEW ALL POST ACTION BUTTON -->
                 <td class=" text-center" width="15%">

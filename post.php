@@ -1,52 +1,49 @@
 <?php include "includes/db.php"; ?>
-
 <!--Header  Path-->
 <?php include "includes/header.php"; ?>
-
 <!-- Navigation -->
 <?php include "includes/navigation.php"; ?>
-
 <!-- Page Content -->
 <div class="container">
-
     <div class="row">
-
         <!--Single Blog Post Content Column -->
         <?php
-        $single_post =$_GET['p_id'];
-        $query = "SELECT * FROM posts WHERE post_id = $single_post";
-        $single_post_show = mysqli_query($connection, $query);
-        foreach($single_post_show as $single_post){
-        ?>
-        <div class="col-lg-8">
+        if (isset($_GET['p_id'])){
+            $the_post_id =$_GET['p_id'];
+            $view_count = "UPDATE posts SET post_views_count = post_views_count + 1 WHERE post_id = $the_post_id";
+            $sent_query = mysqli_query($connection, $view_count);
+            if (!$sent_query){
+                die("QUERY FAILED");
+            }
 
-            <!-- Blog Post -->
-            <!-- Title -->
-            <h1><?php echo $single_post['post_title']; ?></h1>
+            $query = "SELECT * FROM posts WHERE post_id = $the_post_id";
+            $single_post_show = mysqli_query($connection, $query);
+            foreach($single_post_show as $single_post){
+            ?>
+            <div class="col-lg-8">
 
-            <!-- Author -->
-            <p class="lead">
-                by <a href="#"><?php echo $single_post['post_author']; ?></a>
-            </p>
+                <!-- Blog Post -->
+                <!-- Title -->
+                <h1><?php echo $single_post['post_title']; ?></h1>
 
-            <hr>
-
-            <!-- Date/Time -->
-            <p><span class="glyphicon glyphicon-time"></span> Posted on <?php echo $single_post['post_date']; ?></p>
-
-            <hr>
-
-            <!-- Preview Image -->
-            <img class="img-responsive" src="../images/<?php echo $single_post['post_image']; ?>" alt="">
-
-            <hr>
-
-            <!-- Post Content -->
-            <p class="lead"><?php echo $single_post['post_content']; ?></p>
-
-            <hr>
-            <?php } ?>
-
+                <!-- Author -->
+                <p class="lead">
+                    by <a href="#"><?php echo $single_post['post_author']; ?></a>
+                </p>
+                <hr>
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on <?php echo $single_post['post_date']; ?></p>
+                <hr>
+                <!-- Preview Image -->
+                <img class="img-responsive" src="../images/<?php echo $single_post['post_image']; ?>" alt="">
+                <hr>
+                <!-- Post Content -->
+                <p class="lead"><?php echo $single_post['post_content']; ?></p>
+                <hr>
+            <?php }
+        }else{
+            header('Location:index.php');
+            } ?>
             <!-- Blog Comments -->
             <!-- Comments Form -->
             <?php
@@ -90,9 +87,7 @@
                 </form>
             </div>
             <hr>
-
             <!-- Posted Comments -->
-
             <!-- Comment -->
             <?php
             $comment_post_id =$_GET['p_id'];

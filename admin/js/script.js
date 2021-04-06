@@ -1,1 +1,1 @@
-// TEXT EDITOR SCRIPTtinymce.init({selector: '#mytextarea'});$(document).ready(function(){});let div_box = "<div id='load-screen'><div id='loading'></div></div>";$("body").prepend(div_box);$('#load-screen').delay(500).fadeOut(400, function () {    $(this).remove();});
+// TEXT EDITOR SCRIPTtinymce.init({selector: '#mytextarea'});// ADMIN LOADERlet div_box = "<div id='load-screen'><div id='loading'></div></div>";$("body").prepend(div_box);$('#load-screen').delay(500).fadeOut(400, function () {    $(this).remove();});
