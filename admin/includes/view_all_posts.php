@@ -5,26 +5,52 @@ if (isset($_POST['checkBoxArray'])){
     foreach ($_POST['checkBoxArray'] as $post_value_Id){
         $bulk_option = $_POST['bulk_option'];
         switch ($bulk_option){
-
+            // POST PUBLISHED
             case 'published':
                 $query = "UPDATE posts SET post_status = '{$bulk_option}' WHERE post_id = {$post_value_Id}";
                 $update_to_published_status = mysqli_query($connection,$query);
                 confirmQuery($update_to_published_status);
                 break;
+            // POST DRAFT
             case 'draft':
                 $query = "UPDATE posts SET post_status = '{$bulk_option}' WHERE post_id = {$post_value_Id}";
                 $update_to_draft_status = mysqli_query($connection,$query);
                 confirmQuery($update_to_draft_status);
                 break;
+            // POST DELETE
             case 'delete':
                 $query = "DELETE FROM posts WHERE post_id = {$post_value_Id}";
                 $update_to_delete_status = mysqli_query($connection,$query);
                 confirmQuery($update_to_delete_status);
                 break;
+            // POST CLONE
+            case 'clone':
+                $query = "SELECT * FROM posts WHERE post_id = {$post_value_Id}";
+                $select_post_query = mysqli_query($connection,$query);
+                confirmQuery($select_post_query);
+                foreach ($select_post_query as $clone_post){
+                    $post_title = $clone_post['post_title'];
+                    $post_category_id  = $clone_post['post_category_id'];
+                    $post_date = $clone_post['post_date'];
+                    $post_author = $clone_post['post_author'];
+                    $post_status = $clone_post['post_status'];
+                    $post_tags = $clone_post['post_tags'];
+                    $post_content = $clone_post['post_content'];
+                    $post_image = $clone_post['post_image'];
+                }
+                $query = "INSERT INTO posts (post_category_id, post_title, post_author, post_date, post_status, post_tags, post_content, post_image)";
+                $query .= "VALUES({$post_category_id}, '{$post_title}', '{$post_author}', now(), '{$post_status}', '{$post_tags}', '{$post_content}', '{$post_image}')";
+                $copy_posts = mysqli_query($connection,$query);
+
+                if (!$copy_posts){
+                    die("QUERY FAILED" . mysqli_error($connection));
+                }
+                break;
         }
     }
 }
 ?>
+<!-- GET ALL POST FORM -->
 <form action="" method="post">
     <table class="table table-bordered table-hover">
 
@@ -34,6 +60,7 @@ if (isset($_POST['checkBoxArray'])){
                 <option value="published">Published</option>
                 <option value="draft">Draft</option>
                 <option value="delete">Delete</option>
+                <option value="clone">Clone</option>
             </select>
         </div>
         <div class="col-xs-4">
@@ -57,8 +84,9 @@ if (isset($_POST['checkBoxArray'])){
         </tr>
         </thead>
         <tbody>
+        <!-- GET ALL POST -->
         <?php
-        $query = "SELECT * FROM posts";
+        $query = "SELECT * FROM posts ORDER BY post_id DESC ";
         $select_posts = mysqli_query($connection, $query);
         foreach ($select_posts as $post) { ?>
             <tr>
@@ -80,9 +108,12 @@ if (isset($_POST['checkBoxArray'])){
                 <td class="text-center" width="5%"><?php echo $post['post_status']; ?></td>
                 <td width="5%"><?php echo $post['post_comment_count']; ?></td>
                 <td><?php echo $post['post_date']; ?></td>
+
+                <!-- VIEW ALL POST ACTION BUTTON -->
                 <td class=" text-center" width="15%">
                     <!--VIEW POST -->
                     <a class="btn btn-success btn-sm" href="../post.php?p_id=<?php echo $post['post_id']; ?>">View</a>
+                    <!-- POST EDIT -->
                     <a class="btn btn-primary btn-sm" href="posts.php?source=edit_post&p_id=<?php echo $post['post_id']; ?>">Edit</a>
                     <!-- POST DELETE -->
                     <?php
