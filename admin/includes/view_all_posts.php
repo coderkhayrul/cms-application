@@ -96,7 +96,6 @@ if (isset($_POST['checkBoxArray'])){
                 <td class="text-center"><img width="75px" src="../images/<?php echo $post['post_image']; ?>" alt=""></td>
                 <td><?php echo $post['post_author']; ?></td>
                 <td><?php echo $post['post_title']; ?></td>
-
                 <?php
                 $post_categories_id = $post['post_category_id'];
                 $query = "SELECT * FROM categories WHERE cat_id = $post_categories_id";
@@ -109,8 +108,16 @@ if (isset($_POST['checkBoxArray'])){
                 <td class="text-center" width="5%"><?php echo $post['post_status']; ?></td>
                 <td width="5%"><?php echo $post['post_comment_count']; ?></td>
                 <td><?php echo $post['post_date']; ?></td>
-                <td class=" text-center text-primary"><?php echo $post['post_views_count']; ?></td>
-
+                <!-- RESET POST VIEWS-->
+                <?php
+                if (isset($_GET['reset'])) {
+                    $reset_post_id = $_GET['reset'];
+                    $query = "UPDATE posts SET post_views_count = 0 WHERE post_id = $reset_post_id";
+                    $reset_query = mysqli_query($connection, $query);
+                    header("Location: posts.php");
+                }
+                ?>
+                <td class=" text-center"><a href="posts.php?reset=<?php echo $post['post_id']; ?>"><?php echo $post['post_views_count']; ?></a></td>
                 <!-- VIEW ALL POST ACTION BUTTON -->
                 <td class=" text-center" width="15%">
                     <!--VIEW POST -->
@@ -132,10 +139,8 @@ if (isset($_POST['checkBoxArray'])){
         </tbody>
     </table>
 </form>
-
 <!--CheckBox Select Script-->
 <script type="text/javascript">
-
     function toggle(source) {
         var checkboxes = document.querySelectorAll('input[type="checkbox"]');
         for (var i = 0; i < checkboxes.length; i++) {
