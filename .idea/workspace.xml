@@ -21,7 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="145a6c88-2f83-48ae-b481-f892e231e4fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/view_all_posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/view_all_posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/css" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -59,8 +62,9 @@
       <recent name="C:\xampp\htdocs\cms\includes" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\cms\admin\images" />
+      <recent name="C:\xampp\htdocs\cms\css" />
       <recent name="C:\xampp\htdocs\cms" />
+      <recent name="C:\xampp\htdocs\cms\admin\images" />
       <recent name="C:\xampp\htdocs\cms\admin" />
       <recent name="C:\xampp\htdocs\cms\admin\includes" />
     </key>
@@ -101,7 +105,9 @@
       <workItem from="1617625937267" duration="16313000" />
       <workItem from="1617671203077" duration="17101000" />
       <workItem from="1617721011427" duration="125000" />
-      <workItem from="1617721164590" duration="6629000" />
+      <workItem from="1617721164590" duration="7280000" />
+      <workItem from="1617771107377" duration="4425000" />
+      <workItem from="1617784283284" duration="9906000" />
     </task>
     <servers />
   </component>
@@ -156,10 +162,10 @@
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="2689" y="361" width="611" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617376055008" />
-    <state x="2216" y="240" width="672" height="677" key="run.anything.popup" timestamp="1617619613868">
+    <state x="2216" y="240" width="672" height="677" key="run.anything.popup" timestamp="1617812370255">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state x="2216" y="240" width="672" height="677" key="run.anything.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617619613868" />
+    <state x="2216" y="240" width="672" height="677" key="run.anything.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617812370255" />
     <state x="2223" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1617376822639">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
