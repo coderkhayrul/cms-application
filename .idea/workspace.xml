@@ -20,10 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="145a6c88-2f83-48ae-b481-f892e231e4fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/users_image/Khayrul.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/add_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/add_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/admin_navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/admin_navigation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/admin_sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/admin_sidebar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/edit_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/edit_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +111,7 @@
       <workItem from="1617771107377" duration="4425000" />
       <workItem from="1617784283284" duration="14709000" />
       <workItem from="1617862228467" duration="4532000" />
-      <workItem from="1617884395195" duration="4377000" />
+      <workItem from="1617884395195" duration="8607000" />
     </task>
     <servers />
   </component>
@@ -167,9 +170,9 @@
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="2216" y="240" width="672" height="677" key="run.anything.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617812370255" />
-    <state x="2223" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1617376822639">
+    <state x="2223" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1617892132551">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state x="2223" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617376822639" />
+    <state x="2223" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1617892132551" />
   </component>
 </project>
