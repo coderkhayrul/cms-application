@@ -16,19 +16,17 @@
                     <?php
                     if (isset($_POST['submit'])){
                        $username        = $_POST['username'];
-                       $user_password   = $_POST['user_password'];
-                       $user_email      = $_POST['user_email'];
+                       $password   = $_POST['user_password'];
+                       $email      = $_POST['user_email'];
 
                         $username       = mysqli_real_escape_string($connection, $username);
-                        $user_password  = mysqli_real_escape_string($connection, $user_password);
-                        $user_email     = mysqli_real_escape_string($connection, $user_email);
+                        $password  = mysqli_real_escape_string($connection, $password);
+                        $email     = mysqli_real_escape_string($connection, $email);
+                        $password = password_hash($password, PASSWORD_BCRYPT, array('cost' => 12));
 
-                        if (!empty($username) && !empty($user_password) && !empty($user_email)){
-                            $hash = "iflkdfghbnytdcfrtyhj22";
-
-                            $user_password = crypt($user_password, $hash);
+                        if (!empty($username) && !empty($password) && !empty($email)){
                             $query = "INSERT INTO users (username, user_email, user_password, user_role)";
-                            $query .= "VALUES('{$username}','{$user_email}', '{$user_password}', 'subscriber')";
+                            $query .= "VALUES('{$username}','{$email}', '{$password}', 'subscriber')";
                             $register_user_query = mysqli_query($connection, $query);
                             if (!$register_user_query){
                                 die("QUERY FAILED" . mysqli_error($connection). ' ' . mysqli_error($connection));
