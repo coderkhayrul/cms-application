@@ -107,21 +107,15 @@ if (isset($_POST['checkBoxArray'])){
                     $post_categories_id = $post['post_category_id'];
                     $query = "SELECT * FROM categories WHERE cat_id = $post_categories_id";
                     $select_categories_id = mysqli_query($connection, $query);
-                    foreach ($select_categories_id as $post_category_id){
-                ?>
+                    foreach ($select_categories_id as $post_category_id){ ?>
                     <td><?php echo $post_category_id['cat_title']; ?></td>
                 <?php } ?>
                 <!-- POST TAGS -->
                 <td class=" text-center"><?php echo $post['post_tags']; ?></td>
                 <!-- POST STATUS -->
                 <td class="text-center" width="5%"><?php echo $post['post_status']; ?></td>
-
-
                 <!-- POST COMMENT COUNT -->
-
                 <td width="5%" class="text-center"><?php echo $post['post_comment_count']; ?></td>
-
-
 
                 <!-- POST DATE -->
                 <td><?php echo $post['post_date']; ?></td>
