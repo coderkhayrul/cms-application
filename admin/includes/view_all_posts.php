@@ -54,18 +54,20 @@ if (isset($_POST['checkBoxArray'])){
 <form action="" method="post">
     <table class="table table-bordered table-hover">
 
-        <div style="padding:0px" class="col-xs-4" id="bulkOptionContainer">
-            <select name="bulk_option" class="form-control">
-                <option value="">Select Option</option>
-                <option value="published">Published</option>
-                <option value="draft">Draft</option>
-                <option value="delete">Delete</option>
-                <option value="clone">Clone</option>
-            </select>
-        </div>
-        <div class="col-xs-4">
-            <button type="submit" name="submit" class="btn btn-success">Apply</button>
-            <a href="posts.php?source=add_post" class="btn btn-primary">Add New</a>
+        <div>
+            <div style="padding:0px" class="col-xs-4" id="bulkOptionContainer">
+                <select name="bulk_option" class="form-control">
+                    <option value="">Select Option</option>
+                    <option value="published">Published</option>
+                    <option value="draft">Draft</option>
+                    <option value="delete">Delete</option>
+                    <option value="clone">Clone</option>
+                </select>
+            </div>
+            <div class="col-xs-4">
+                <button type="submit" name="submit" class="btn btn-success">Apply</button>
+                <a href="posts.php?source=add_post" class="btn btn-primary">Add New</a>
+            </div>
         </div>
 
         <thead>
@@ -91,22 +93,37 @@ if (isset($_POST['checkBoxArray'])){
         $select_posts = mysqli_query($connection, $query);
         foreach ($select_posts as $post) { ?>
             <tr>
+                <!-- POST ID -->
                 <th scope="col"><input name="checkBoxArray[]" type="checkbox" class="checkBoxes" value="<?php echo $post['post_id']; ?>"></th>
                 <th scope="col"><?php echo $post['post_id']; ?></th>
+                <!-- POST IMAGE -->
                 <td class="text-center"><img width="75px" src="../images/<?php echo $post['post_image']; ?>" alt=""></td>
+                <!-- POST AUTHOR -->
                 <td><?php echo $post['post_author']; ?></td>
+                <!-- POST TITLE -->
                 <td><?php echo $post['post_title']; ?></td>
+                <!-- POST CATEGORY ID -->
                 <?php
-                $post_categories_id = $post['post_category_id'];
-                $query = "SELECT * FROM categories WHERE cat_id = $post_categories_id";
-                $select_categories_id = mysqli_query($connection, $query);
-                foreach ($select_categories_id as $post_category_id){
-                    ?>
+                    $post_categories_id = $post['post_category_id'];
+                    $query = "SELECT * FROM categories WHERE cat_id = $post_categories_id";
+                    $select_categories_id = mysqli_query($connection, $query);
+                    foreach ($select_categories_id as $post_category_id){
+                ?>
                     <td><?php echo $post_category_id['cat_title']; ?></td>
                 <?php } ?>
+                <!-- POST TAGS -->
                 <td class=" text-center"><?php echo $post['post_tags']; ?></td>
+                <!-- POST STATUS -->
                 <td class="text-center" width="5%"><?php echo $post['post_status']; ?></td>
-                <td width="5%"><?php echo $post['post_comment_count']; ?></td>
+
+
+                <!-- POST COMMENT COUNT -->
+
+                <td width="5%" class="text-center"><?php echo $post['post_comment_count']; ?></td>
+
+
+
+                <!-- POST DATE -->
                 <td><?php echo $post['post_date']; ?></td>
                 <!-- RESET POST VIEWS-->
                 <?php
@@ -139,6 +156,7 @@ if (isset($_POST['checkBoxArray'])){
         </tbody>
     </table>
 </form>
+
 <!--CheckBox Select Script-->
 <script type="text/javascript">
     function toggle(source) {

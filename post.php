@@ -44,7 +44,6 @@
         }else{
             header('Location:index.php');
             } ?>
-            <!-- Blog Comments -->
             <!-- Comments Form -->
             <?php
             if (isset($_POST['create_comment'])){
@@ -54,6 +53,7 @@
                 $comment_content = $_POST['comment_content'];
 
                 if(!empty($comment_author) && !empty($comment_email) && !empty($comment_content)){
+
                     $query = "INSERT INTO comments (comment_post_id, comment_author, comment_email, comment_content, comment_status, comment_date)";
                     $query .= "VALUES($comment_post_id, '{$comment_author}', '{$comment_email}', '{$comment_content}', 'Unapproved', now())";
                     $create_comment_query = mysqli_query($connection, $query);
