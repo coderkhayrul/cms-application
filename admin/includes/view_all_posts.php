@@ -3,7 +3,7 @@
 <?php
 if (isset($_POST['checkBoxArray'])){
     foreach ($_POST['checkBoxArray'] as $post_value_Id){
-        $bulk_option = $_POST['bulk_option'];
+        $bulk_option = escape($_POST['bulk_option']);
         switch ($bulk_option){
             // POST PUBLISHED
             case 'published':
@@ -104,7 +104,7 @@ if (isset($_POST['checkBoxArray'])){
                 <td><?php echo $post['post_title']; ?></td>
                 <!-- POST CATEGORY ID -->
                 <?php
-                    $post_categories_id = $post['post_category_id'];
+                    $post_categories_id = escape($post['post_category_id']);
                     $query = "SELECT * FROM categories WHERE cat_id = $post_categories_id";
                     $select_categories_id = mysqli_query($connection, $query);
                     foreach ($select_categories_id as $post_category_id){ ?>
@@ -122,7 +122,7 @@ if (isset($_POST['checkBoxArray'])){
                 <!-- RESET POST VIEWS-->
                 <?php
                 if (isset($_GET['reset'])) {
-                    $reset_post_id = $_GET['reset'];
+                    $reset_post_id = escape($_GET['reset']);
                     $query = "UPDATE posts SET post_views_count = 0 WHERE post_id = $reset_post_id";
                     $reset_query = mysqli_query($connection, $query);
                     header("Location: posts.php");
@@ -138,7 +138,7 @@ if (isset($_POST['checkBoxArray'])){
                     <!-- POST DELETE -->
                     <?php
                     if (isset($_GET['delete'])) {
-                        $delete_post_id = $_GET['delete'];
+                        $delete_post_id = ($_GET['delete']);
                         $query = mysqli_query($connection, "DELETE FROM posts WHERE post_id = $delete_post_id");
                         header("Location: posts.php");
                     }
